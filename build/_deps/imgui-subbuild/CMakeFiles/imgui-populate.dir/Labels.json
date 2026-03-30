@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3423d89db70a3b693da8690ebbb3fbd1/imgui-populate.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/ba76baa9c5620d9e5414fccccba3127d/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/CMakeFiles/3d12738f3723361eb53181cab043bf01/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}

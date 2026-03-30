@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3d12738f3723361eb53181cab043bf01\imgui-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\ba76baa9c5620d9e5414fccccba3127d\imgui-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\3423d89db70a3b693da8690ebbb3fbd1\imgui-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\imgui-subbuild\CMakeFiles\imgui-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C81A2788-F5B8-3C93-A68E-A6CDFBF4EAF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

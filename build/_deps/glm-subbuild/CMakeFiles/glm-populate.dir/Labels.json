@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/glm-populate"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/2a3e5b8efaa017ee5343b1588e7c0466/glm-populate.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/d9c8e2fec4a03c57831c345db2c2c303/glm-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glm-subbuild/CMakeFiles/54d077995fe738497dcfb4476dd08ef9/glm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glm-populate"
+		],
+		"name" : "glm-populate"
+	}
+}

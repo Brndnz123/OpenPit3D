@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glfw-subbuild\CMakeFiles\75ba06efb0051c962b9b19764ef7d6ec\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3E2F1AB2-E312-37DA-95E7-04EB08A230C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

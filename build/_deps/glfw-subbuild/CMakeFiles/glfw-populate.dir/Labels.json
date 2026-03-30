@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/75ba06efb0051c962b9b19764ef7d6ec/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/788bb0b5977fa287514c832dd5daef05/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glfw-subbuild/CMakeFiles/f6c95210eb9426760ef8bd151831156c/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

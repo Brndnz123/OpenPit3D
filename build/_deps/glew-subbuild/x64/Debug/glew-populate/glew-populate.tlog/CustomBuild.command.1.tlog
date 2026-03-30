@@ -1,0 +1,150 @@
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CA9D1802BEB16AF6E691489584E4E053\GLEW-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\20E339EA3CE39F7F437C750163F62E86\GLEW-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/Debug/glew-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D6BFB00719CD0970CC8E184E79158D3A\GLEW-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\GLEW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild -BC:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild --check-stamp-file C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

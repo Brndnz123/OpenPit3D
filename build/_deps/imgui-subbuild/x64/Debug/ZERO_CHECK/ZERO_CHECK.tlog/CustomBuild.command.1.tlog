@@ -1,0 +1,10 @@
+^C:\USERS\BRNND\ONEDRIVE\DESKTOP\OPENPIT3D\BUILD\_DEPS\IMGUI-SUBBUILD\CMAKEFILES\3423D89DB70A3B693DA8690EBBB3FBD1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild -BC:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/imgui-subbuild/imgui-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

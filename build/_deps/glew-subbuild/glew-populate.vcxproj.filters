@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\ca9d1802beb16af6e691489584e4e053\glew-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\20e339ea3ce39f7f437c750163f62e86\glew-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\d6bfb00719cd0970cc8e184e79158d3a\glew-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glew-subbuild\CMakeFiles\glew-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7E6B9D59-0A52-3C4B-A7D7-4DD78B753637}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

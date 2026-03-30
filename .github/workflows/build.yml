@@ -1,0 +1,178 @@
+name: Build OpenPit3D
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:        # Allows manual run from the Actions tab
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  LINUX BUILD
+# ─────────────────────────────────────────────────────────────────────────────
+jobs:
+  build-linux:
+    name: Linux (GCC x64)
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. System dependencies ───────────────────────────────────────────────
+      # libglew-dev   — GLEW (OpenGL extension loader)
+      # libgl1-mesa-dev / libglu1-mesa-dev — OpenGL headers and mesa driver
+      # libx11-dev etc — GLFW window system requirements
+      # libomp-dev    — OpenMP (parallelises Kriging and LG loops)
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            cmake \
+            libglew-dev \
+            libgl1-mesa-dev \
+            libglu1-mesa-dev \
+            libx11-dev \
+            libxrandr-dev \
+            libxinerama-dev \
+            libxcursor-dev \
+            libxi-dev \
+            libxxf86vm-dev \
+            libomp-dev \
+            curl \
+            unzip
+
+      # ── 3. SQLite amalgamation ────────────────────────────────────────────────
+      # CMakeLists.txt expects sqlite3.h + sqlite3.c in vendor/sqlite3/.
+      # We download the official amalgamation zip and extract just those two files.
+      - name: Download SQLite amalgamation
+        run: |
+          mkdir -p vendor/sqlite3
+          curl -L -o sqlite.zip \
+            "https://www.sqlite.org/2025/sqlite-amalgamation-3490100.zip"
+          unzip -j sqlite.zip "*/sqlite3.h" "*/sqlite3.c" -d vendor/sqlite3/
+          echo "SQLite files:"
+          ls -lh vendor/sqlite3/
+
+      # ── 4. FetchContent cache ─────────────────────────────────────────────────
+      # CMake FetchContent downloads GLFW, GLM, ImGui, and Eigen at configure
+      # time. Without a cache these ~200 MB of clones happen on EVERY run.
+      # We key the cache on the CMakeLists.txt hash so it invalidates only
+      # when dependency versions change.
+      - name: Cache CMake FetchContent downloads
+        uses: actions/cache@v4
+        with:
+          path: build/_deps
+          key: linux-fetchcontent-${{ hashFiles('CMakeLists.txt') }}
+          restore-keys: linux-fetchcontent-
+
+      # ── 5. CMake configure ────────────────────────────────────────────────────
+      - name: CMake Configure
+        run: |
+          cmake -B build \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_CXX_COMPILER=g++ \
+            -DCMAKE_CXX_FLAGS="-O3 -march=x86-64"
+
+      # ── 6. Build ──────────────────────────────────────────────────────────────
+      - name: CMake Build
+        run: cmake --build build --parallel $(nproc)
+
+      # ── 7. Bundle artifact ────────────────────────────────────────────────────
+      # Pack the executable alongside the data files so the artifact is
+      # immediately runnable — drop it in a folder, run the exe.
+      - name: Bundle artifact
+        run: |
+          mkdir -p dist
+          cp build/OpenPit3D        dist/
+          cp collars.txt surveys.txt samples.txt lithologies.txt dist/
+          echo "Artifact contents:"
+          ls -lh dist/
+
+      - name: Upload Linux artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpenPit3D-Linux-x64
+          path: dist/
+          if-no-files-found: error
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  WINDOWS BUILD
+# ─────────────────────────────────────────────────────────────────────────────
+  build-windows:
+    name: Windows (MSVC x64)
+    runs-on: windows-latest
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Setup MSVC environment ─────────────────────────────────────────────
+      - name: Setup MSVC x64
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      # ── 3. Install GLEW via vcpkg ─────────────────────────────────────────────
+      # vcpkg is pre-installed on windows-latest GitHub runners.
+      # We install the x64-windows triplet and tell CMake about it via
+      # CMAKE_TOOLCHAIN_FILE so find_package(GLEW) succeeds automatically.
+      - name: Install GLEW via vcpkg
+        run: |
+          vcpkg install glew:x64-windows
+          echo "VCPKG_ROOT=$env:VCPKG_INSTALLATION_ROOT" >> $env:GITHUB_ENV
+
+      # ── 4. SQLite amalgamation ────────────────────────────────────────────────
+      - name: Download SQLite amalgamation
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path vendor/sqlite3 | Out-Null
+          Invoke-WebRequest -Uri "https://www.sqlite.org/2025/sqlite-amalgamation-3490100.zip" `
+                            -OutFile sqlite.zip
+          Expand-Archive -Path sqlite.zip -DestinationPath sqlite_tmp -Force
+          Copy-Item sqlite_tmp\*\sqlite3.h  vendor\sqlite3\
+          Copy-Item sqlite_tmp\*\sqlite3.c  vendor\sqlite3\
+          Write-Host "SQLite files:" (Get-ChildItem vendor\sqlite3)
+
+      # ── 5. FetchContent cache ─────────────────────────────────────────────────
+      - name: Cache CMake FetchContent downloads
+        uses: actions/cache@v4
+        with:
+          path: build/_deps
+          key: windows-fetchcontent-${{ hashFiles('CMakeLists.txt') }}
+          restore-keys: windows-fetchcontent-
+
+      # ── 6. CMake configure ────────────────────────────────────────────────────
+      - name: CMake Configure
+        run: |
+          cmake -B build ^
+            -G "Visual Studio 17 2022" -A x64 ^
+            -DCMAKE_BUILD_TYPE=Release ^
+            -DCMAKE_TOOLCHAIN_FILE="%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake"
+
+      # ── 7. Build ──────────────────────────────────────────────────────────────
+      - name: CMake Build
+        run: cmake --build build --config Release --parallel
+
+      # ── 8. Bundle artifact ────────────────────────────────────────────────────
+      - name: Bundle artifact
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          Copy-Item build\Release\OpenPit3D.exe dist\
+          Copy-Item collars.txt, surveys.txt, samples.txt, lithologies.txt dist\
+          # Copy GLEW runtime DLL so the exe runs without a separate install
+          $glew = Get-ChildItem "$env:VCPKG_INSTALLATION_ROOT\installed\x64-windows\bin" `
+                    -Filter "glew32.dll" -Recurse | Select-Object -First 1
+          if ($glew) { Copy-Item $glew.FullName dist\ }
+          Write-Host "Artifact contents:" (Get-ChildItem dist)
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpenPit3D-Windows-x64
+          path: dist/
+          if-no-files-found: error

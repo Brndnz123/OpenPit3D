@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\CMakeFiles\d027ab26fa577fe8d47bf15d187139ea\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\brnnd\OneDrive\Desktop\OpenPit3D\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1683793D-CB3F-3724-A5C1-79E57AA9ECAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B526D387-2640-35ED-976F-C7E56DB14EC2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

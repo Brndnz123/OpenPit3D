@@ -1,0 +1,9 @@
+LABEL,VALUE,UNIT
+--- PIT OZETI ---,,
+Ore Blok,3336,adet
+Waste Blok,2157,adet
+Ore Tonaj,72057600.0,t
+Waste Tonaj,46591200.0,t
+Stripping Orani,0.647,t waste/t ore
+Ort. Ore Tenoru,1.5988,%
+Net Pit Degeri,224526.15,$
