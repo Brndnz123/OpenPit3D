@@ -115,7 +115,7 @@ target_link_libraries(OpenPit3D PRIVATE
     libglew_static          # GLEW statik — GLEW_STATIC tanımını otomatik ekler
     glm
     imgui_lib
-    $<$<BOOL:${OpenMP_CXX_FOUND}>:OpenMP::OpenMP_CXX>
+    $<$<BOOL:${OpenMP_CXX_FOUND}>:$<$<NOT:$<CXX_COMPILER_ID:MSVC>>:OpenMP::OpenMP_CXX>>
 )
 
 # ── Platform OpenGL kütüphanesi ───────────────────────────────────────────────
