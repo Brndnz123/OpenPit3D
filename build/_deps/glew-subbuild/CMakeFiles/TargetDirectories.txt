@@ -1,3 +1,0 @@
-C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/glew-populate.dir
-C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/brnnd/OneDrive/Desktop/OpenPit3D/build/_deps/glew-subbuild/CMakeFiles/ZERO_CHECK.dir
